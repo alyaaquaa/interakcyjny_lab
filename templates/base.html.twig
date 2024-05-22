@@ -13,9 +13,12 @@
     {% endblock %}
 </head>
 <body>
-<main role="main" class="container-fluid">
+{# ... #}
+<div class="container-fluid">
+    {% include 'default/_flash_messages.html.twig' %}
     {% block body %}{% endblock %}
-</main>
+</div>
+{# ... #}
 {% block javascripts %}
     {# {% block importmap %}{{ importmap('app') }}{% endblock %}#}
     <script
